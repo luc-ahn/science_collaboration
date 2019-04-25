@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Candida Albicans</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="navbar-main">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+            <a href="#">Home</a>
+            <br>
+            <br>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">FAQ</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="navbar_display">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-bars fa-lg nav-icon"></i></span>
+        </div>
+    </div>
+
+    <div class="content-main">
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span> 
+            <span class="dot" onclick="currentSlide(7)"></span> 
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span> 
+            <span class="dot" onclick="currentSlide(10)"></span>    
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="text body_text">
+                    "Initial/Start Page"
+                </div>
+            </div>
+                
+            <div class="mySlides fade">
+                <div class="text body_text">
+                    What is Candida?
+                    <br>
+                    Candica Albicans, or C. Albicans, is a dimorphic fungus. That means that it occurs in two different forms.
+                </div>
+            </div>
+                
+            <div class="mySlides fade">
+                <div class="text body_text">
+                    It can be commonly found in the oro-pharyngeal cavity, gastrointestinal tract, genitourinary tract, and skin of humans and other warm-blooded animals.
+                    <br>
+                    It functions as an opportunistic pathogen and is the most common cause of fungal infections in humans.
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="text body_text">
+                    Why Does It Matter?
+                    <br>
+                    It’s presence in Humans is generally harmless. However, as it is an opportunistic pathogen, its colonization has the possibility of leading to diseases, especially in instances of immune suppression. These diseases can range from mucosal infections, like oral thrush, to severe ones such as candidemia (candida infection of the bloodstream).
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="text body_text">
+                    How Does It Do It?
+                    <br>
+                    The ability of C. albicans to invade its host is in part due to its dimorphic nature. It has the ability to grow as ovoid yeast or as elongated hyphae. Infection of tissues is attributed to the transition from the colonizing yeast form to the invasive hyphal form. This transition of C. albicans from yeast to hyphae is known as filamentation.
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="text body_text">
+                    While it is know that C. albicans can transition to this invasive form in response to a number of external cues, the exact underlying mechanisms are not well characterized. The research presented is most interested in contact-dependent filamentation, and the way that iron-regulation is related to this pathway.
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="text body_text">
+                    Cells from frozen stock on plates are utilized for the experiment. These cells are grown overnight and are then diluted and grown again for 4 hours. A small portion of these are placed in a petri dish and warm agar is poured on them and swirled to distribute the cells evenly. It is then cooled down until it solidifies. These plates are then left in an incubator to form colonies.
+                </div>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="text body_text">
+                    After a 3-4 days in the incubator, the plates are ready to be “counted” for filamentation. Each plate has 100 of its colonies counted and if any one colony has more than 20 filaments it counts towards the filamentation percentage.
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="text body_text">
+                    Why is it important?
+                    <br>
+                    Because C. Albicans is a commensal organism (living in a relationship in which one organism derives food or other benefits from another organism without hurting or helping it) and it commonly resides in the GI and reproductive tracts, skin, and oral cavity. Being one of the most common fungal diseases today it is important to understand the triggers for candida filamentation and deal with them accordingly. The major issue is that candida can become active through various stimuli, so understanding and studying its causes could help save many lives.
+                </div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="text body_text">
+                    The diseases caused by the invasion of C. Albicans, while immunocompromised, which is quite common especially in patients in hospitals, can be quite lethal. The most severe of the diseases carries a mortality rate of 30 - 50%. Therefore while not a popular subject of study, it is nevertheless important.
+                </div>
+            </div>
+                
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+        </div>
+    </div>
+</body>
+
+<script src="assets/js/main.js"></script>
+
+</html>

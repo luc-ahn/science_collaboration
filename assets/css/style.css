@@ -1,0 +1,158 @@
+body {
+    font-family: Verdana, "Geneva", Tahoma, sans-serif;
+    background-color: #B39ABD;
+    color: #FFFFFF;
+
+    display: grid;
+    grid-template-columns: 8vw 92vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "navbar-main" "content-main"
+    ;
+}
+  
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #725D7B;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #ECD0CF;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.navbar_display {
+    background-color: #725D7B;
+    width: 8vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.nav-icon {
+    margin: 0.5em auto auto auto;
+    color: #FFFFFF; 
+}
+
+.fa-times {
+    margin: 0.2em auto auto auto;
+}
+
+/* ------------------------------------------- */
+
+.mySlides {
+    display: none;
+    height: 85vh;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 95%;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 38px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 2em;
+    width: 2em;
+    margin: 1em 1em;
+    background-color: #E1D7E5;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #FFFFFF;
+}
+  
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.text {
+    margin: 1em auto 1em auto;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 90%;
+    text-align: center;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@media only screen and (max-width: 300px) {
+    .prev,.next,.text {font-size: 13px}
+}
+
+.body_text {
+    font-size: 2em;
+}
